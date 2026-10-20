@@ -1,0 +1,68 @@
+[
+  {
+    "section": "1",
+    "requirement": "ArduPlane 4.6.3 fixed-wing SITL",
+    "status": "Implemented",
+    "evidence": "../01_Patch/build-manifest.json"
+  },
+  {
+    "section": "2",
+    "requirement": "MONITOR WARNING RESCUE STABILIZED pilot/chute sequence",
+    "status": "Implemented with disclosed extensions",
+    "evidence": "README.md"
+  },
+  {
+    "section": "3",
+    "requirement": "Five named parameters and justified extra settings",
+    "status": "5 required plus 21 additional custom settings",
+    "evidence": "Custom_Parameters.json"
+  },
+  {
+    "section": "4.1",
+    "requirement": "Warning below 200 m with sustained down acceleration; mode unchanged; ~1 Hz",
+    "status": "Implemented",
+    "evidence": "../04_Logs/bin/warning.BIN"
+  },
+  {
+    "section": "4.2",
+    "requirement": "Automatic armed/in-flight capture below 100 m from any mode with continued qualifying acceleration",
+    "status": "Implemented; extra predicted-impact entry is separately disclosed",
+    "evidence": "../04_Logs/bin/manual.BIN; ../04_Logs/bin/auto.BIN"
+  },
+  {
+    "section": "4.3",
+    "requirement": "Existing TECS recovery, available full power, zero bank and speed protection",
+    "status": "Implemented in native model",
+    "evidence": "../04_Logs/bin/recovery.BIN"
+  },
+  {
+    "section": "4.4",
+    "requirement": "Stable signal, five-second window, pilot mode-change handover",
+    "status": "Implemented; optional deliberate stick acknowledgment added",
+    "evidence": "../04_Logs/bin/handover.BIN"
+  },
+  {
+    "section": "4.5",
+    "requirement": "AP_Parachute, motor cut, disarm without pilot response",
+    "status": "Implemented",
+    "evidence": "../04_Logs/bin/no_pilot.BIN"
+  },
+  {
+    "section": "5",
+    "requirement": "MANUAL takeover, hysteresis, disabled behavior and logs",
+    "status": "Implemented",
+    "evidence": "../04_Logs/low-height-verification.json"
+  },
+  {
+    "section": "6",
+    "requirement": "Patch, complete parameters, SITL binary, BIN with phase analysis, README",
+    "status": "Supplied in five delivery folders",
+    "evidence": "../DELIVERY_INDEX.md"
+  },
+  {
+    "section": "7",
+    "requirement": "Seven required SITL scenarios including both MANUAL and AUTO capture",
+    "status": "Passed in eight native flights",
+    "evidence": "../04_Logs/acceptance.json"
+  }
+]

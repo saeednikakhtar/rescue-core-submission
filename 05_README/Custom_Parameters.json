@@ -1,0 +1,158 @@
+[
+  {
+    "name": "RSC_ENABLE",
+    "value": "0 / 1",
+    "en": "Enables all rescue logic. Firmware default: 0; supplied test profile: 1.",
+    "required": true
+  },
+  {
+    "name": "RSC_ALT_WARN",
+    "value": "200 m",
+    "en": "Warning boundary and recovery target, relative to Home.",
+    "required": true
+  },
+  {
+    "name": "RSC_ALT_TRIG",
+    "value": "100 m",
+    "en": "Automatic capture boundary during continued qualifying descent, relative to Home.",
+    "required": true
+  },
+  {
+    "name": "RSC_ACC_Z",
+    "value": "5 m/s\u00b2",
+    "en": "Gravity-compensated downward acceleration threshold for the original entry rule.",
+    "required": true
+  },
+  {
+    "name": "RSC_HAND_S",
+    "value": "5 s",
+    "en": "Pilot response window, starting only after stable recovery is confirmed.",
+    "required": true
+  },
+  {
+    "name": "RSC_DWELL_S",
+    "value": "0.2 s",
+    "en": "Condition dwell after the fixed gate of at least 1 s descent and 2 m height loss.",
+    "required": false
+  },
+  {
+    "name": "RSC_ALT_HYST",
+    "value": "10 m",
+    "en": "Height margin for clearing a warning without chatter near the boundary.",
+    "required": false
+  },
+  {
+    "name": "RSC_SINK",
+    "value": "5 m/s",
+    "en": "Sink threshold for the additional impact-entry path. Sink alone does not trigger it.",
+    "required": false
+  },
+  {
+    "name": "RSC_UN_ANG",
+    "value": "60\u00b0",
+    "en": "Severe roll/pitch diagnostic and recovery-failure threshold.",
+    "required": false
+  },
+  {
+    "name": "RSC_UN_RATE",
+    "value": "90\u00b0/s",
+    "en": "Severe rotation threshold used to assess instability during recovery.",
+    "required": false
+  },
+  {
+    "name": "RSC_TTC_S",
+    "value": "6 s",
+    "en": "Time-to-Home margin for the additional low-height entry path.",
+    "required": false
+  },
+  {
+    "name": "RSC_STAB_S",
+    "value": "2 s",
+    "en": "Continuous duration for which every stable-flight criterion must hold.",
+    "required": false
+  },
+  {
+    "name": "RSC_ALT_TOL",
+    "value": "5 m",
+    "en": "Height tolerance around the target: 195\u2013205 m for a 200 m target.",
+    "required": false
+  },
+  {
+    "name": "RSC_VZ_TOL",
+    "value": "1 m/s",
+    "en": "Maximum absolute vertical speed accepted as stable level flight.",
+    "required": false
+  },
+  {
+    "name": "RSC_ANG_MAX",
+    "value": "10\u00b0",
+    "en": "Maximum absolute roll and pitch accepted as stable.",
+    "required": false
+  },
+  {
+    "name": "RSC_ST_RATE",
+    "value": "15\u00b0/s",
+    "en": "Maximum rotation rate. A brief zero-angle crossing does not count as stability.",
+    "required": false
+  },
+  {
+    "name": "RSC_RECOV_S",
+    "value": "90 s",
+    "en": "Overall deadline for stable recovery, measured from capture.",
+    "required": false
+  },
+  {
+    "name": "RSC_FAIL_S",
+    "value": "3 s",
+    "en": "Allowed persistent excessive sink or severe instability after the initial grace period.",
+    "required": false
+  },
+  {
+    "name": "RSC_MIN_ALT",
+    "value": "30 m",
+    "en": "Low-height recovery limit. Below it, the extra entry path accepts sink above 2 m/s.",
+    "required": false
+  },
+  {
+    "name": "RSC_PROG_S",
+    "value": "10 s",
+    "en": "Window for assessing actual height or total-energy-height progress.",
+    "required": false
+  },
+  {
+    "name": "RSC_PROG_M",
+    "value": "3 m",
+    "en": "Minimum height gain OR energy gain equivalent to 3 m of height in that window.",
+    "required": false
+  },
+  {
+    "name": "RSC_IMPACT_S",
+    "value": "2 s",
+    "en": "Urgent predicted Home-datum crossing threshold while sink exceeds 2 m/s.",
+    "required": false
+  },
+  {
+    "name": "RSC_REARM_S",
+    "value": "10 s",
+    "en": "Post-handover cooldown plus a clear-risk interval; imminent danger can override it.",
+    "required": false
+  },
+  {
+    "name": "RSC_STK_EN",
+    "value": "1",
+    "en": "Optional deliberate stick/throttle acknowledgment. Set 0 for mode-change-only handover.",
+    "required": false
+  },
+  {
+    "name": "RSC_STK_US",
+    "value": "120 \u00b5s",
+    "en": "Minimum fresh raw-input change from the stabilization baseline.",
+    "required": false
+  },
+  {
+    "name": "RSC_STK_S",
+    "value": "0.3 s",
+    "en": "Duration of valid fresh deliberate input before handover to FBWA.",
+    "required": false
+  }
+]

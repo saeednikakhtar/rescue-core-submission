@@ -1,0 +1,7 @@
+ArduPilot-derived code: GPLv3 or later; see COPYING.txt. Complete corresponding firmware source and initialized SITL build modules are supplied as a separate release asset. The build manifest identifies the pinned base and exact binary/patch.
+MAVLink protocol definitions: see MAVLINK_COPYING.txt. Mode metadata uses official c_library_v2 AVAILABLE_MODES wire formats.
+Cygwin and GCC/libstdc++ runtime licenses: https://cygwin.com/licensing.html and https://gcc.gnu.org/onlinedocs/libstdc++/manual/license.html . The five native DLLs are required by the compiled Windows SITL executable.
+libiconv and gettext runtime: https://www.gnu.org/software/libiconv/ and https://www.gnu.org/software/gettext/ .
+Alferyevo coordinates: OpenStreetMap contributors, ODbL 1.0. See 02_Parameters/test-site.json and https://www.openstreetmap.org/copyright .
+Golos Text font embedded in the unchanged English Word response: SIL Open Font License 1.1; see 05_README/GolosText-OFL.txt.
+No Python interpreter, Python dependency distribution, Flight Lab panel, QGC installer or application launchers are included in the core package.

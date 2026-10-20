@@ -1,0 +1,31 @@
+{
+  "name": "Alferyevo Airfield",
+  "name_local": "Alferyevo",
+  "code": "XUOA",
+  "lat": 56.0953903,
+  "lon": 35.883429,
+  "elevation_m": 161.106674,
+  "heading": 314.4957409771742,
+  "runway_length_m": 637.3548958333984,
+  "runway_width_m": 50,
+  "surface": "grass",
+  "runway_geometry": [
+    [
+      56.0953903,
+      35.883429
+    ],
+    [
+      56.0971927,
+      35.8801398
+    ],
+    [
+      56.0994073,
+      35.8760986
+    ]
+  ],
+  "coordinate_source": "https://www.openstreetmap.org/way/907401394",
+  "airport_source": "https://www.openstreetmap.org/way/1365221112",
+  "operator_source": "https://history.mai.ru/facts/item.php?id=113027",
+  "elevation_source": "https://api.open-elevation.com/api/v1/lookup?locations=56.0953903,35.883429",
+  "notes": "Simulation starts at the southeast end of the community-mapped grass strip. Heading and length are derived from its mapped endpoints. Elevation is an approximate DEM datum. Width is a visual assumption. This is not a surveyed or operational aerodrome chart."
+}
