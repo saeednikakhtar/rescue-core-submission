@@ -57,7 +57,7 @@
     "section": "6",
     "requirement": "Patch, complete parameters, SITL binary, BIN with phase analysis, README",
     "status": "Supplied in five delivery folders",
-    "evidence": "../DELIVERY_INDEX.md"
+    "evidence": "../README.md"
   },
   {
     "section": "7",
